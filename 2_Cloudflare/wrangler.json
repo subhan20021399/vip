@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "head",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-16",
+  "workers_dev": true,
+  "preview_urls": false,
+  "send_metrics": false,
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.lua"
+      ],
+      "fallthrough": true
+    }
+  ]
+}
